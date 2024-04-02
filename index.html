@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabriel Paulillo - Pratique - Bootstrap Avançado</title>
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <style>
+        .item {
+            background-color: #f8f9fa;
+            border: 1px solid #dee2e6;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div data-bs-ride="carousel" id="exercise-carousel" class="carousel carousel-fade slide">
+            <div class="carousel-inner">
+                <div data-bs-interval="3000" class="carousel-item active">
+                    <img src="https://cdn.pixabay.com/photo/2024/04/02/04/09/yellow-8669977_1280.jpg" alt="Foto de uma flor amarela" class="d-block">
+                    <div class="carousel-caption">
+                        <h2>Foto de uma flor amarela</h2>
+                    </div>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img src="https://cdn.pixabay.com/photo/2024/04/02/04/51/women-8670031_1280.jpg" alt="Foto de duas mulheres conversando" class="d-block">
+                    <div class="carousel-caption">
+                        <h2>Foto de duas mulheres conversando</h2>
+                    </div>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img src="https://cdn.pixabay.com/photo/2024/04/01/07/34/swan-8668206_1280.jpg" alt="Foto de um cisne preto" class="d-block">
+                    <div class="carousel-caption">
+                        <h2>Foto de um cisne preto</h2>
+                    </div>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img src="https://cdn.pixabay.com/photo/2024/04/01/16/30/wren-8669278_1280.jpg" alt="Foto de um passarinho marrom" class="d-block">
+                    <div class="carousel-caption">
+                        <h2>Foto de um passarinho marrom</h2>
+                    </div>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img src="https://cdn.pixabay.com/photo/2024/04/01/14/42/dog-8669095_1280.jpg" alt="Foto de um cachorro preto" class="d-block">
+                    <div class="carousel-caption">
+                        <h2>Foto de um cachorro preto</h2>
+                    </div>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img src="https://cdn.pixabay.com/photo/2024/04/02/05/20/ai-generated-8670074_1280.jpg" alt="Foto de um leão" class="d-block">
+                    <div class="carousel-caption">
+                        <h2>Foto de um leão</h2>
+                    </div>
+                </div>
+                <button data-bs-target="#exercise-carousel" data-bs-slide="prev" type="button" class="carousel-control-prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button data-bs-target="#exercise-carousel" data-bs-slide="next" type="button" class="carousel-control-next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <div class="carousel-indicators">
+                    <button data-bs-target="#exercise-carousel" data-bs-slide-to="0" type="button" class="active"></button>
+                    <button data-bs-target="#exercise-carousel" data-bs-slide-to="1" type="button"></button>
+                    <button data-bs-target="#exercise-carousel" data-bs-slide-to="2" type="button"></button>
+                    <button data-bs-target="#exercise-carousel" data-bs-slide-to="3" type="button"></button>
+                    <button data-bs-target="#exercise-carousel" data-bs-slide-to="4" type="button"></button>
+                    <button data-bs-target="#exercise-carousel" data-bs-slide-to="5" type="button"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12 p-3 d-flex align-items-stretch">
+                <div class="card item">
+                    <div class="card-header">
+                        <h4 class="card-title">Aluga-se</h5>
+                    </div>
+                    <div class="card-body">
+                        <img class="d-block w-100 h-75" src="https://cdn.pixabay.com/photo/2014/11/21/17/17/house-540796_1280.jpg" alt="Casa de pedra">
+                        <p class="card-text m-2 p-2">Aluga-se casa de pedra nas montanhas do Himalaia <br> <strong>R$ 500,00/dia</strong>.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 p-3 d-flex align-items-stretch">
+                <div class="card item">
+                    <div class="card-header">
+                        <h4 class="card-title">Vende-se</h5>
+                    </div>
+                    <div class="card-body">
+                        <img class="d-block w-100 h-75" src="https://cdn.pixabay.com/photo/2016/11/18/17/46/house-1836070_1280.jpg" alt="Casa de madeira">
+                        <p class="card-text m-2 p-2">Vende-se casa de madeira no estilo americano por <br> <strong>R$ 2.000.000,00</strong></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 p-3 d-flex align-items-stretch">
+                <div class="card item">
+                    <div class="card-header">
+                        <h4 class="card-title">Vende-se</h5>
+                    </div>
+                    <div class="card-body">
+                        <img class="d-block w-100 h-75" src="https://cdn.pixabay.com/photo/2016/06/24/10/47/house-1477041_1280.jpg" alt="Casa com pisicna">
+                        <p class="card-text m-2 p-2">Vende-se casa smart com piscina por <br> <strong>R$ 30.000.000,00</strong></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 p-3 d-flex align-items-stretch">
+                <div class="card item">
+                    <div class="card-header">
+                        <h4 class="card-title">Vende-se</h5>
+                    </div>
+                    <div class="card-body">
+                        <img class="d-block w-100 h-75" src="https://cdn.pixabay.com/photo/2020/02/01/22/10/house-4811590_1280.jpg" alt="Toca de Hobbit">
+                        <p class="card-text m-2 p-2">Vende-se toca de hobbit modernizada por <br> <strong>R$ 2.000.000,00</strong></p>
+                    </div>
+                </div>
+            </div>            
+            <div class="col-lg-4 col-md-6 col-sm-12 p-3 d-flex align-items-stretch">
+                <div class="card item">
+                    <div class="card-header">
+                        <h4 class="card-title">Aluga-se</h5>
+                    </div>
+                    <div class="card-body">
+                        <img class="d-block w-100 h-75" src="https://cdn.pixabay.com/photo/2022/01/30/19/46/school-6982073_1280.jpg" alt="Casa no deserto">
+                        <p class="card-text m-2 p-2">Aluga-se casa no deserto do Atacama por <br> <strong>R$ 300,00/dia</strong></p>
+                    </div>
+                </div>
+            </div>            
+            <div class="col-lg-4 col-md-6 col-sm-12 p-3 d-flex align-items-stretch">
+                <div class="card item">
+                    <div class="card-header">
+                        <h4 class="card-title">Aluga-se</h5>
+                    </div>
+                    <div class="card-body">
+                        <img class="d-block w-100 h-75" src="https://cdn.pixabay.com/photo/2016/12/06/14/33/log-cabin-1886620_1280.jpg" alt="Cabana na Finlândia">
+                        <p class="card-text m-2 p-2">Aluga-se cabana na Finlândia, com linda vista localizada na floresta <br> <strong>R$ 350,00/dia</strong></p>
+                    </div>
+                </div>
+            </div>
+    </div>
+    
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
